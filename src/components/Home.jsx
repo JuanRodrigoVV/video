@@ -1,6 +1,7 @@
 import React from 'react'
 import CardComponent from './CardComponent'
 import Section1 from './Section'
+import Section2 from './Section2'
 
 export default function Home() {
   return (
@@ -12,8 +13,8 @@ export default function Home() {
         {/* div de las cards */}
         <div className='cardDiv'>
           <div className='cardDiv2'>
-            <CardComponent title={'+100'} text={'Clients'}/>
-            <CardComponent title={'+5'} text={'Countries'}/>
+            <CardComponent title={'+100'} text={'Clients'} icons='users'/>
+            <CardComponent title={'+5'} text={'Countries'} icons='world'/>
             <CardComponent title={'+200'} text={'Jobs done'}/>
             <CardComponent title={'+150'} text={'Live Streams'}/>
           </div>
@@ -29,6 +30,9 @@ export default function Home() {
           <button className='button'>Unlock 30% off</button>
         </div>
         {/* title and button */}
+        {/* section2  */}
+        <Section2/>
+        {/* section2  */}
 
     </div>
   )
