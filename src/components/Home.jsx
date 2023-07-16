@@ -1,5 +1,6 @@
 import React from 'react'
 import CardComponent from './CardComponent'
+import Clients from './Clients'
 import Section1 from './Section'
 import Section2 from './Section2'
 
@@ -33,6 +34,9 @@ export default function Home() {
         {/* section2  */}
         <Section2/>
         {/* section2  */}
+        {/* clients experience */}
+        <Clients/>
+        {/* clients experience */}
 
     </div>
   )
