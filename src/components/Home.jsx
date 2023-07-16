@@ -22,6 +22,13 @@ export default function Home() {
         {/* Section 1 */}
           <Section1/>
         {/* Section 1 */}
+        {/* title and button */}
+        <div className='titleandbutton'>
+          <h1 className='hometitle'>Join today and get 30% disccount</h1>
+          <p className='subtitle'>Captivate Your Audience: Boost User Traffic with Engaging Multimedia Editing</p>
+          <button className='button'>Unlock 30% off</button>
+        </div>
+        {/* title and button */}
 
     </div>
   )

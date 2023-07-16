@@ -14,7 +14,7 @@ export default function Section1() {
 
   let [link, setLink] = useState("https://filmora.wondershare.com/assets/video/filmora12/homepage/homepage-ipad.mp4")
 
-
+    
   return (
     <div className='section1'>
         <div className='mainCardSection1'>

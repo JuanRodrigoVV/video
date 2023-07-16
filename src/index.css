@@ -163,3 +163,27 @@ code {
  .buttonContainer:hover {
   transform: scale(1.1); /* Aplicamos un aumento de escala del 10% */
 }
+
+.titleandbutton {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.hometitle {
+  font-size: 48px;
+  color: #07273d;
+  font-family: 'Roboto', sans-serif;
+  margin: 10px;
+
+}
+
+.subtitle {
+  color: #07273d;
+  font-family: 'Roboto', sans-serif;
+
+
+}
