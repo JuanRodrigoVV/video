@@ -1,24 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
+import Home from './components/Home';
+import About from './components/About';
+import Contact from './components/Contact';
+import { HeaderResponsive } from './components/Header';
+import Pricing from './components/Pricing';
 
 function App() {
+
+  const links = [
+    { link: '/home', label: 'Home' },
+    { link: '/about', label: 'About' },
+    { link: '/contact', label: 'Contact' },
+    { link: '/pricing', label: 'Pricing' },
+
+  ];
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section>
+
+    <HeaderResponsive links={links}/>
+    <Routes>
+       <Route path='/home' element={<Home/>}/>
+       <Route path='/about' element={<About/>}/>
+       <Route path='/contact' element={<Contact/>}/>
+       <Route path='/pricing' element={<Pricing/>}/>
+    </Routes>
+    </section>
   );
 }
 

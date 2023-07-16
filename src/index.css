@@ -11,3 +11,155 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.bannerdiv {
+  border-radius: 12px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+ 
+}
+.banner {
+  border-radius: 12px;
+  margin: 25px;
+}
+
+.cardDiv {
+  display: flex;
+  width: 100%;
+  height: 292px;
+  /* background-color: aqua; */
+  justify-content: center;
+}
+
+.cardDiv2 {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  /* background-color: red; */
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+
+}
+ .card {
+  width: 270px;
+  height: 196px;
+  border-radius: 20px;
+  border: 1px solid rgb(161, 152, 152);
+  display: flex;
+  flex-direction: column;
+  /* background-color: aqua; */
+  justify-content: center;
+  align-items: center;
+ }
+
+ .cardTitle {
+  font-size: xx-large;
+  margin-bottom: -15px;
+ }
+
+ .cardText{
+  font-size: medium;
+ }
+
+ .cardInside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  height: 50%;
+ }
+
+ .section1 {
+  width: 100%;
+  height: 629px;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+
+.mainCardSection1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* background-color: azure; */
+  height: 619px;
+  width: 80%;
+  justify-content: space-around;
+}
+ .videoTextSection1{
+  height: 90%;
+  /* background-color: beige; */
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+ }
+
+ .buttons {
+  height: 242px;
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* background-color: red; */
+ }
+ .cardVideo {
+  width: 505px;
+  height: 533px;
+  object-fit: contain;
+  
+ }
+
+ .textDiv {
+  width: 410px;
+  
+  padding: 10px;
+ }
+ 
+ .video {
+  width: 505px;
+  height: 533px;
+  object-fit: contain;
+  border-radius: 20px;
+ }
+
+ button {
+  width: 220px;
+  height: 69px;
+  background-color: #07273d;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  
+ }
+
+ .titleDiv {
+  font-size: xx-large;
+  
+ }
+
+ .icons {
+  width: 48px;
+  height: 48px;
+ }
+
+ .buttonContainer {
+  display: flex;
+  flex-direction: row;
+  transition: transform 0.3s;
+ }
+ .buttonContainer:hover {
+  transform: scale(1.1); /* Aplicamos un aumento de escala del 10% */
+}
