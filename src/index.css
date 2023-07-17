@@ -144,7 +144,12 @@ code {
   font-family: 'Roboto', sans-serif;
   font: bolder;
   font-weight: bold;
+  transition: transform 0.3s ease;
+
   
+ }
+ .button:hover {
+  transform: scale(1.1)
  }
 
  .titleDiv {
@@ -238,6 +243,7 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-bottom: 15px;
   
 }
 
@@ -247,6 +253,7 @@ p {
   height: auto;
   gap: 70px;
   /* background-color: blue; */
+  text-align: left;
 }
 .iconsCard {
   display: flex;
@@ -262,10 +269,12 @@ p {
   font-size: 32px;
   justify-self: center;
   align-self: center;
+  background-color: red;
 }
 
 .clientText {
   font-size: 18px;
+  margin-top: -15px;
 }
 
 .iconstext {
@@ -288,7 +297,7 @@ p {
 
 .card2 {
   width: 272px;
-  height: 492px;
+  height: auto;
   background-color: #eff5ff;
   border-radius: 20px;
   margin: 10px;
@@ -312,4 +321,113 @@ p {
   margin: 30px;
   font-family: 'Roboto', sans-serif;
 
+}
+
+.cardImage {
+  border-radius: 100%;
+  height: 48px;
+  width: 48px;
+
+}
+
+.cardImageText {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+    
+  text-align: left;
+  /* background-color: red; */
+}
+
+.clientCardName {
+  font-size: 20px;
+  line-height: 24px;
+}
+.clientCardTitle {
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: -15px;
+}
+
+.imageCard {
+  width: 30%;
+}
+
+.bottomBannerDiv {
+  width: 100%;
+  height: 580px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #defff3;
+}
+
+.bottomTitle {
+  color: #07273d;
+  font-size: 42px;
+  width: 60%;
+  text-align: center;
+}
+.bottomBannerImg {
+  height: 260px;
+}
+
+.footer {
+  width: 100%;
+  height: 440px;
+  display: flex;
+  flex-direction: row;
+  background-color: #000000;
+}
+
+.footerImageDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+}
+
+
+.footerImage {
+  height: 240px;
+}
+
+.footerText {
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  
+}
+
+.footerH1 {
+  font-size: 24px;
+}
+
+.footerText2{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  /* background-color: red; */
+  height: 245px;
+}
+
+.footerp {
+ font-size: 14px;
+ text-decoration: none;
+ color: white;
+ line-height: 34px;
+ transition: transform 0.3s ease;
+
+}
+
+.footerp:hover {
+  transform: scale(1.1);
 }

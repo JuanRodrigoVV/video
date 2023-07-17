@@ -1,6 +1,8 @@
 import React from 'react'
+import BottomBanner from './BottomBanner'
 import CardComponent from './CardComponent'
 import Clients from './Clients'
+import Footer from './Footer'
 import Section1 from './Section'
 import Section2 from './Section2'
 
@@ -37,6 +39,12 @@ export default function Home() {
         {/* clients experience */}
         <Clients/>
         {/* clients experience */}
+        {/* bottom banner */}
+        <BottomBanner/>
+        {/* bottom banner */}
+        {/* footer */}
+        <Footer/>
+        {/* footer */}
 
     </div>
   )

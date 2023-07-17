@@ -45,7 +45,7 @@ export default function Section1() {
                     <div className='textDiv'>
                         <h1 className='titleDiv'>Creativity in Minds, Filmora at Hands</h1>
                         <p>Add the finishing touch to your masterpiece and share to Filmora workspace for co-creation.</p>
-                        <button>CONTACT US</button>
+                        <button className='button'>CONTACT US</button>
 
                     </div>
                 {/* text div */}
