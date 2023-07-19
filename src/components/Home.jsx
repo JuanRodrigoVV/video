@@ -1,4 +1,5 @@
-import React from 'react'
+
+import React, { useState } from 'react';
 import BottomBanner from './BottomBanner'
 import CardComponent from './CardComponent'
 import Clients from './Clients'
@@ -6,8 +7,17 @@ import Footer from './Footer'
 import Section1 from './Section'
 import Section2 from './Section2'
 import Chat from './Chat'
+import { BsChatDots } from 'react-icons/bs';
+
 
 export default function Home() {
+  const [openChat, setOpenChat] = useState(false);
+
+  const handleChat = () => {
+    return setOpenChat(!openChat);
+     
+  };
+
   return (
     <div className='home'>
       {/* div del banner */}
@@ -48,9 +58,12 @@ export default function Home() {
         {/* footer */}
         {/* chatbot */}
         <div className='chat'>
-          <Chat/>
+        {openChat ? <Chat closeChat={handleChat} /> : <button className='chatButton1' onClick={handleChat}><BsChatDots className='chatIcon'/>  Chat</button>}
+
         </div>
         {/* chatbot */}
+        
+
 
     </div>
   )

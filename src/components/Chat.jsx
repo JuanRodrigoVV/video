@@ -3,7 +3,7 @@ import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css'
 import { MainContainer, ChatContainer, MessageList, Message, MessageInput, TypingIndicator } from '@chatscope/chat-ui-kit-react'
 import { useState } from 'react'
 
-function Chat() {
+function Chat({closeChat}) {
     const [typing, setTyping] = useState(false)
     const [messages, setMessages] = useState([
         {
@@ -88,11 +88,12 @@ function Chat() {
     return (
   
         <div className='chatContainer'>
+            <button className='chatButton' onClick={closeChat}>Close</button>
             <MainContainer className='mainContainer'>
-                <ChatContainer>
-                    <MessageList typingIndicator={typing ? <TypingIndicator content="WonderShare Bot is Typing"/> : null }>
+                <ChatContainer >
+                    <MessageList  typingIndicator={typing ? <TypingIndicator content="WonderShare Bot is Typing"/> : null }>
                         {messages.map((message, i) => {
-                            return <Message key={i} model={message}></Message>
+                            return <Message  key={i} model={message}></Message>
                         })}
                     </MessageList>
                     <MessageInput placeholder='Type your message' onSend={handleSend}/>

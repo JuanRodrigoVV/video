@@ -443,11 +443,50 @@ p {
 
 .chatContainer {
   position: relative;
-  height: 800px;
+  height: 700px;
   width: 100%;
   border-radius: 20px;
 }
 
 .mainContainer {
   border-radius: 20px;
+}
+
+.chatButton {
+  width: 70px;
+  height: 30px;
+  position: relative;
+  border: white solid 1px;
+  margin-bottom: 5px;
+  transition: transform 0.3s ease;
+
+}
+
+.chatButton1 {
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  width: 100px;
+  transition: transform 0.3s ease;
+  border: white solid 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.chatButton1:hover {
+  transform: scale(1.1);
+}
+.chatButton:hover {
+  transform: scale(1.1);
+}
+
+.chatIcon {
+  width: 28px;
+  height: 28px;
 }
