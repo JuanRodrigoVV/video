@@ -86,9 +86,9 @@ function Chat() {
 
 
     return (
-    <div>
-        <div style={{ position: "relative", height: "800px", width: "700px"}}>
-            <MainContainer>
+  
+        <div className='chatContainer'>
+            <MainContainer className='mainContainer'>
                 <ChatContainer>
                     <MessageList typingIndicator={typing ? <TypingIndicator content="WonderShare Bot is Typing"/> : null }>
                         {messages.map((message, i) => {
@@ -99,7 +99,7 @@ function Chat() {
                 </ChatContainer>
             </MainContainer>
         </div>
-    </div>
+   
   )
 }
 

@@ -47,7 +47,7 @@ export default function Home() {
         <Footer/>
         {/* footer */}
         {/* chatbot */}
-        <div>
+        <div className='chat'>
           <Chat/>
         </div>
         {/* chatbot */}
