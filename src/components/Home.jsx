@@ -5,6 +5,7 @@ import Clients from './Clients'
 import Footer from './Footer'
 import Section1 from './Section'
 import Section2 from './Section2'
+import Chat from './Chat'
 
 export default function Home() {
   return (
@@ -45,6 +46,11 @@ export default function Home() {
         {/* footer */}
         <Footer/>
         {/* footer */}
+        {/* chatbot */}
+        <div>
+          <Chat/>
+        </div>
+        {/* chatbot */}
 
     </div>
   )
