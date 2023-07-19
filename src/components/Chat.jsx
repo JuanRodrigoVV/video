@@ -2,10 +2,8 @@ import React from 'react'
 import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css'
 import { MainContainer, ChatContainer, MessageList, Message, MessageInput, TypingIndicator } from '@chatscope/chat-ui-kit-react'
 import { useState } from 'react'
-import { forgetCache } from '@apollo/client/cache/inmemory/reactiveVars'
 
 function Chat() {
-    console.log(process.env.REACT_APP_OPENAI_API_KEY)
     const [typing, setTyping] = useState(false)
     const [messages, setMessages] = useState([
         {
@@ -32,7 +30,7 @@ function Chat() {
 
    const processMesageToChatGPT = async (chatMessages) => {
         
-        let apiMessages = messages.map((messageObject) => {
+        let apiMessages = chatMessages.map((messageObject) => {
             let role = "";
             if(messageObject.sender === "ChatGPT") {
                 role="assistant"
@@ -69,12 +67,13 @@ function Chat() {
             })
             .then((data) => {
                 console.log(data.choices[0].message.content);
-                setMessages([
-                    ...messages, {
-                        message: data.choices[0].message.content,
-                        sender: "ChatGPT"
+                setMessages((prevMessages) => [
+                    ...prevMessages,
+                    {
+                      message: data.choices[0].message.content,
+                      sender: "ChatGPT"
                     }
-                ]);
+                  ]);
                 setTyping(false);
             })
             .catch((error) => {
