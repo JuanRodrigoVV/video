@@ -14,13 +14,13 @@ export default function DropDownOption({options}) {
              <h1 className='titleDropDown'>Products</h1>
              <BiDownArrow onClick={() => setArrow(!arrow)} className='dropDownIcon'/>
         </div>
-        {arrow ? <>
+        {arrow ? <segment className='segment'>
             {options.map((option, index) => (
               <li key={index}>
                 <a className='footerHref' href={option.href}>{option.title}</a>
               </li>
             ))}
-          </> : <>
+          </ segment> : <>
         </>}
     
     </ul>

@@ -5,6 +5,7 @@
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@chatscope/chat-ui-kit-react": "^1.10.1",
+    "@emailjs/browser": "^3.11.0",
     "@emotion/react": "^11.11.1",
     "@mantine/core": "^6.0.16",
     "@mantine/ds": "^6.0.16",
