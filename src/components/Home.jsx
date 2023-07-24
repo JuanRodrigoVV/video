@@ -22,7 +22,7 @@ export default function Home() {
     <div className='home'>
       {/* div del banner */}
       <div className='bannerdiv'>
-        <video autoPlay={true} loop={true} muted className='banner' width={"1472px"} src="https://filmora.wondershare.com/assets/video/homepage/filmora-banner-video.mp4"></video>
+        <video autoPlay={true} loop={true} muted className='banner'  src="https://filmora.wondershare.com/assets/video/homepage/filmora-banner-video.mp4"></video>
       </div>
         {/* div de las cards */}
         <div className='cardDiv'>
@@ -58,7 +58,7 @@ export default function Home() {
         {/* footer */}
         {/* chatbot */}
         <div className='chat'>
-        {openChat ? <Chat closeChat={handleChat} /> : <button className='chatButton1' onClick={handleChat}><BsChatDots className='chatIcon'/>  Chat</button>}
+        {/* {openChat ? <Chat closeChat={handleChat} /> : <button className='chatButton1' onClick={handleChat}><BsChatDots className='chatIcon'/>  Chat</button>} */}
 
         </div>
         {/* chatbot */}

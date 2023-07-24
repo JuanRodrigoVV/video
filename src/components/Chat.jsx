@@ -1,7 +1,7 @@
 import React from 'react'
 import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css'
 import { MainContainer, ChatContainer, MessageList, Message, MessageInput, TypingIndicator } from '@chatscope/chat-ui-kit-react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 function Chat({closeChat}) {
     const [typing, setTyping] = useState(false)
@@ -11,6 +11,21 @@ function Chat({closeChat}) {
           sender: "ChatGPT"  
         }
     ])
+
+
+//   useEffect(() => {
+//     // Restaurar mensajes del localStorage al cargar el componente
+//     const storedMessages = localStorage.getItem('chatMessages');
+//     if (storedMessages) {
+//       setMessages([
+        
+//         JSON.parse(storedMessages)]);
+//     }
+//   }, []);
+
+//   useEffect(() => {
+//     localStorage.setItem('chatMessages', JSON.stringify(messages));
+//   }, [messages]);
 
     const handleSend = async (message) => {
         const newMessage = {
@@ -90,13 +105,13 @@ function Chat({closeChat}) {
         <div className='chatContainer'>
             <button className='chatButton' onClick={closeChat}>Close</button>
             <MainContainer className='mainContainer'>
-                <ChatContainer >
+                <ChatContainer className='chatContainer2'>
                     <MessageList  typingIndicator={typing ? <TypingIndicator content="WonderShare Bot is Typing"/> : null }>
                         {messages.map((message, i) => {
                             return <Message  key={i} model={message}></Message>
                         })}
                     </MessageList>
-                    <MessageInput placeholder='Type your message' onSend={handleSend}/>
+                    <MessageInput className='messageInput' placeholder='Type your message' onSend={handleSend}/>
                 </ChatContainer>
             </MainContainer>
         </div>

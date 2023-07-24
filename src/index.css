@@ -19,42 +19,49 @@ code {
   position: relative;
   display: flex;
   justify-content: center;
- 
 }
+
+
+
 .banner {
   border-radius: 12px;
-  margin: 25px;
+  margin: 35px;
+  height: auto;
+  width: 98%;
 }
 
 .cardDiv {
-  display: flex;
-  width: 100%;
-  height: 292px;
-  /* background-color: aqua; */
+   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 20px; /* Add the desired gap between cards */
 }
 
 .cardDiv2 {
   display: flex;
   flex-direction: row;
-  width: 80%;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 10px;
   /* background-color: red; */
   justify-content: center;
   align-items: center;
   justify-content: space-around;
+  
 
 }
- .card {
-  width: 270px;
+.card {
+  flex: 1 1 270px; /* flex-grow: 1, flex-shrink: 1, flex-basis: 270px */
+  max-width: 270px;
   height: 196px;
   border-radius: 20px;
   border: 1px solid rgb(161, 152, 152);
   display: flex;
   flex-direction: column;
-  /* background-color: aqua; */
   justify-content: center;
   align-items: center;
- }
+}
+
 
  .cardTitle {
   font-size: xx-large;
@@ -76,12 +83,17 @@ code {
 
  .section1 {
   width: 100%;
-  height: 629px;
+  /* max-height: 629px; */
+  height: auto;
   /* background-color: red; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  /* margin: 40px; */
+  margin-top: 20px;
+  margin-bottom: 20px;
  }
 
 .mainCardSection1 {
@@ -90,7 +102,8 @@ code {
   justify-content: center;
   align-items: center;
   /* background-color: azure; */
-  height: 619px;
+  
+  height: auto;
   width: 80%;
   justify-content: space-around;
 }
@@ -103,21 +116,26 @@ code {
   align-items: center;
   justify-content: center;
   justify-content: space-around;
+  object-fit: contain;
  }
 
  .buttons {
-  height: 242px;
+  /* height: 242px; */
   width: 160px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-top: 20px;
   /* background-color: red; */
  }
  .cardVideo {
-  width: 505px;
+  width: auto;
   height: 533px;
-  object-fit: contain;
+  /* object-fit: contain; */
   
+ }
+ .cardVideo video {
+  object-fit: contain;
  }
 
  .textDiv {
@@ -127,7 +145,7 @@ code {
  }
  
  .video {
-  width: 505px;
+  width: auto;
   height: 533px;
   object-fit: contain;
   border-radius: 20px;
@@ -178,10 +196,11 @@ code {
 .titleandbutton {
   display: flex;
   flex-direction: column;
-  height: 250px;
+  height: auto;
   width: 100%;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .hometitle {
@@ -203,15 +222,17 @@ p {
 }
 
 .cardIcons {
-  width: 48px;
-  height: 48px;
-}
-
+  width: auto;
+  height: auto;
+  max-width: 48px; 
+  min-width: 48px; }
+  
 .iconsDiv {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .section2 {
@@ -221,12 +242,23 @@ p {
   align-items: center;
   width: 100%;
   /* background-color: red; */
-  height: 80vh;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 .videoContainer {
-  height: 597px;
-  width: 70%;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 
+}
+.videoContainer video {
+  width: 100%;
+  max-width: 1260px;
+  height: 100%;
+  object-fit: contain;
+  padding: 10px;
 }
 
 .videoSection2 {
@@ -287,15 +319,16 @@ p {
   background-color: red;
 }
 
-.clientCardDiv {
+/* .clientCardDiv {
   display: flex;
   width: 100%;
   height: auto;
-  /* background-color: red; */
+  background-color: red;
   justify-content: center;
-}
+} */
 
 .card2 {
+  padding: 5px;
   width: 272px;
   height: auto;
   background-color: #eff5ff;
@@ -311,8 +344,13 @@ p {
 .clientCardDiv2 {
   display: flex;
   flex-direction: row;
+  /* background-color: red; */
   justify-content: center;
-  width: 80%;
+  width: 100%;
+  gap: 20px;
+  flex-wrap: wrap;
+  
+  
 
 }
 
@@ -356,12 +394,13 @@ p {
 
 .bottomBannerDiv {
   width: 100%;
-  height: 580px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #defff3;
+  padding-bottom: 10px;
 }
 
 .bottomTitle {
@@ -370,8 +409,22 @@ p {
   width: 60%;
   text-align: center;
 }
-.bottomBannerImg {
+/* .bottomBannerImg {
   height: 260px;
+} */
+
+.bbImgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 250px;
+}
+
+.bbImgContainer img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 .footer {
@@ -433,7 +486,7 @@ p {
 }
 
 .chat{
-  width: 700px;
+  width: 750px;
   position: fixed;
   bottom: 0;
   right: 20px;
@@ -443,13 +496,15 @@ p {
 
 .chatContainer {
   position: relative;
-  height: 700px;
+  height: 800px;
   width: 100%;
   border-radius: 20px;
 }
 
 .mainContainer {
   border-radius: 20px;
+  height: 800px;
+  
 }
 
 .chatButton {
@@ -489,4 +544,234 @@ p {
 .chatIcon {
   width: 28px;
   height: 28px;
+}
+
+.chatContainer2 {
+  margin-top: 12px;
+  
+}
+
+.messageInput {
+  margin-bottom: 28px;
+}
+
+.select {
+  display: none;
+}
+
+@media screen and (max-width: 1220px) {
+  .footerHref {
+    text-decoration: none;
+    color: white;
+  }
+
+
+ .href {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+ }
+
+  .dropDown {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    width: 100%;
+    text-align: center;
+  }
+
+  .dropDownOption {
+    width: 100%;
+    text-align: left;
+    margin-left: 10px;
+    border-bottom: grey solid 0.5px;
+    padding: 10px;
+    /* background-color: blue; */
+  }
+  .titleArrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+  }
+
+  .dropDownIcon {
+    width: 28px;
+    height: 28px;
+    margin-right: 50px;
+  }
+
+ 
+
+  .ulFooter {
+    color: white;
+    display: flex;
+   flex-direction: column;
+   list-style: none;
+   text-align: left;
+   padding: 8px 16px;
+   margin: 0;
+   
+  }
+
+  
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  .footerText {
+    display: none; /* Ocultar el texto en el modo responsive */
+  }
+
+  .footerText2 {
+    display: block; /* Mostrar el texto como bloques en el modo responsive */
+    margin-bottom: 10px;
+  }
+
+  /* Estilos para los selects en el modo responsive */
+  
+
+  .select {
+    background-color: red;
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    display: block;
+    margin: 5px 0;
+    padding: 5px;
+  }
+
+  .option {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .selectLabel {
+    color: white;
+    font-size: 24px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .videoTextSection1 {
+    flex-direction: column;
+  }
+  .cardVideo {
+    height: 345px;
+  }
+  .video {
+    height: 345px;
+  }
+
+  .cardDiv {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .cardDiv2 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .button {
+    width: 124px;
+  }
+
+  .card {
+    width: auto;
+    margin-bottom: 20px;
+    flex-basis: 92%;
+  }
+
+  .mainCardSection1 {
+    width: 100%;
+    height: auto;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+   }
+
+   .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    gap: auto;
+    width: 100%;
+   }
+
+   .textDiv {
+    justify-content: center;
+    text-align: center;
+   }
+   .cardText2 {
+    font-size: 16px;
+   }
+   .iconsDiv {
+    gap: 5px;
+  }
+  
+  .clientTitle {
+    font-size: small;
+  }
+  
+  .clientText {
+    font-size: small;
+    margin-top: 1px;
+  } 
+
+  .bottomBannerImg {
+    height: 100%;
+    width: 100%;
+  }
+  .bottomTitle {
+    font-size: 28px;
+  }
+  
+
+}
+
+
+
+
+
+/* Media query for even smaller screens */
+@media screen and (max-width: 784px) {
+  .card {
+    max-width: 170px;
+    width: auto;
+    height: auto;
+    flex-basis: 100%;
+    
+  }
+
+  .cardIcons {
+    margin-top: 10px;
+  }
+ .cardDiv2 {
+  gap: 8px; 
+ }
+
+ .section1 {
+  margin: 0;
+ }
+
+ .cardTitle {
+  font-size: 22px;
+ }
+
+
 }

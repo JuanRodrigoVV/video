@@ -1,4 +1,5 @@
 import React from 'react'
+import DropDownOption from './DropDownOption'
 
 export default function Footer() {
   return (
@@ -29,6 +30,57 @@ export default function Footer() {
                 <a className='footerp' href="">Social Media Video ads</a>
                 <a className='footerp' href="">Products</a>
             </div>
+        </div>
+        {/* <div className='select'>
+            <div className='option'>
+                <label for="videoOptions" className='selectLabel'>Selecciona una opción:</label>
+                <select id="videoOptions">
+                <option value="video1">Video 1</option>
+                <option value="video2">Video 2</option>
+                <option value="video3">Video 3</option>
+                </select>
+            </div>
+            <div className='option'>
+                <label for="videoOptions" className='selectLabel'>Selecciona una opción:</label>
+                <select id="videoOptions">
+                <option value="video1">Video 1</option>
+                <option value="video2">Video 2</option>
+                <option value="video3">Video 3</option>
+                </select>
+            </div>
+            <div className='option'>
+                <label for="videoOptions" className='selectLabel'>Selecciona una opción:</label>
+                <select id="videoOptions">
+                <option value="video1">Video 1</option>
+                <option value="video2">Video 2</option>
+                <option value="video3">Video 3</option>
+                </select>
+            </div>
+            
+        </div> */}
+
+        {/* prueba de dropddown */}
+        <div className='dropDown'>
+         <DropDownOption options={[
+            {title: 'Youtube Video Editing', href: "https://www.google.com"}, 
+            {title: 'Live Streaming', href: "https://www.google.com"}, 
+            {title: 'Tutorial Editing', href: "https://www.google.com"}, 
+            {title: 'Educational Content', href: "https://www.google.com"}]}
+            />
+         <DropDownOption options={[
+            {title: 'Youtube Video Editing', href: "https://www.google.com"}, 
+            {title: 'Live Streaming', href: "https://www.google.com"}, 
+            {title: 'Tutorial Editing', href: "https://www.google.com"}, 
+            {title: 'Educational Content', href: "https://www.google.com"}]}
+            />
+         <DropDownOption options={[
+            {title: 'Youtube Video Editing', href: "https://www.google.com"}, 
+            {title: 'Live Streaming', href: "https://www.google.com"}, 
+            {title: 'Tutorial Editing', href: "https://www.google.com"}, 
+            {title: 'Educational Content', href: "https://www.google.com"}]}
+            />
+         {/* <DropDownOption/>
+         <DropDownOption/> */}
         </div>
     </div>
     
