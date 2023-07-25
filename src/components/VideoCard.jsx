@@ -23,6 +23,7 @@ export default function VideoCard({ videos }) {
        <div className='videoCardContainer'>
        <div className='videoCard' key={title}>
           <iframe
+            
             onMouseOver={() => handleVideoHover(index)}
             onMouseOut={() => handleVideoLeave(index)}
             src={`${src}${videoStates[index].loop ? '&autoplay=1&loop=1' : ''}`}

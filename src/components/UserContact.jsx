@@ -20,6 +20,7 @@ export const UserContact = () => {
     <form ref={form} onSubmit={sendEmail} className="contact">
  
         <h1 className='contactTitle'>Get in Touch</h1>
+        <h2 className='subTitle'>Please fill in your details, and one of our representatives will reach out to you soon.</h2>
         <label className='contactLabel' htmlFor="user_name">Name</label>
         <input className='inputContact' type="text" name="user_name" />
         <label className='contactLabel'   htmlFor="user_email" >Email</label>

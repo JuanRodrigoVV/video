@@ -21,6 +21,13 @@ code {
   margin-top: 20px;
 }
 
+.subTitle {
+  font-weight: 300;
+  margin-top: 0;
+  font-size: 24px;
+  justify-self: center;
+  text-align: center;
+}
 
 
 .banner {
@@ -764,12 +771,13 @@ p {
 
 .contactTitle {
   font-size: 48px;
-  color: #07273d
+  color: #07273d;
+  text-align: center;
 }
 
 .inputContact {
-  width: 60%;
-  max-width: 360px;
+  max-width: 600px;
+  width: 40%;
   height: 45px;
   border: grey solid 0.5px;
   border-radius: 12px;
@@ -1155,6 +1163,15 @@ p {
 
 /* Media query for even smaller screens */
 @media screen and (max-width: 784px) {
+
+  .subTitle {
+    font-weight: 300;
+    margin-top: 0;
+    font-size: 22px;
+    justify-self: center;
+    text-align: center;
+  }
+
   .card {
     max-width: 170px;
     width: auto;
@@ -1198,6 +1215,9 @@ p {
    /* pricing page */
    .carDetailsText {
     font-size: 10px;
+  }
+  .inputContact {
+    width: 70%;
   }
 
   .message {
