@@ -1067,42 +1067,86 @@ p {
   /* background-color: red; */
   height: auto;
   width: 100%;
-  gap: 10px;
-  padding: 10px;
+
   justify-content: center;
+  gap: 10px;
   
 }
 
-.videoCard {
-  background-color: #ffffff;
+/* .videoCard {
+  background-color: #e7f5ff;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  /* padding: 10px; */
+  
+  align-items: center;
   height: 340px;
-  border-radius: 12px;
   margin: 10px;
+  max-width: 400px;
   width: auto;
-  width: 420px;
-  object-fit: cover;
+  overflow: hidden;
 }
 
 .videoCard iframe {
   width: 100%;
   height: 100%;
   border: none;
-  border-radius: 12px;
-  background-color: #ffffff;
-  /* box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 4px 0px; */
+  object-fit: fill;
+} */
 
+.videoCard {
+  background-color: #111010;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 340px;
+ 
+  /* margin: 10px; */
+  width: 420px;
+  overflow: hidden;
+  position: relative; 
+}
+
+.videoCard iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 12px;
+  top: 0;
+  left: 0; 
 }
 
 .cardVideoTitle {
-  font-weight: 300;
+  font-weight: 600;
+  margin-bottom: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
 
 .videoCardP {
-  font-size: 14px;
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.descriptionCard {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  margin: 0;
+  width: 80%;
+  text-align: left;
+
+  /* background-color: blue; */
+}
+
+.videoCardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  max-width: 420px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 4px 0px;
 }
 
 

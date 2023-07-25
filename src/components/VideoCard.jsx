@@ -20,22 +20,28 @@ export default function VideoCard({ videos }) {
   return (
     <>
       {videos.map(({ title, src, description }, index) => (
-        <div className='videoCard' key={title}>
+       <div className='videoCardContainer'>
+       <div className='videoCard' key={title}>
           <iframe
             onMouseOver={() => handleVideoHover(index)}
             onMouseOut={() => handleVideoLeave(index)}
             src={`${src}${videoStates[index].loop ? '&autoplay=1&loop=1' : ''}`}
-            width="640"
-            height="360"
+            width="100%"
+            height="auto"
             frameBorder="0"
             allow="autoplay; fullscreen; picture-in-picture"
             allowFullScreen
             preload="metadata" 
-           
-          ></iframe>
+            
+            ></iframe>
+
+        </div>
+          <div className='descriptionCard'>
           <h1 className='cardVideoTitle'>{title}</h1>
           <p className='videoCardP'>{description}</p>
-        </div>
+          </div>
+            </div>
+
       ))}
     </>
   );
