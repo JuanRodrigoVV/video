@@ -1,11 +1,14 @@
 import React from 'react'
 import {TiTick} from 'react-icons/ti'
 import Footer from './Footer'
+import VideoGallery from './VideoGallery'
 
 
 export default function About() {
   return (
     <div className='about'>
+
+
         <h1 className='aboutTitle'>Unlock Your Digital Potential with Our Creative Team</h1>
      <div className='textAboutUs'>
        <p className='aboutText'>
@@ -16,13 +19,13 @@ export default function About() {
             </span>
             Whether you need a stunning video campaign, engaging copy, a website that converts, or a complete digital strategy, we have you covered.
 
-            Join us on this exciting journey of unlocking your digital potential. Let's make your brand shine and leave a lasting impression on your audience.
-
-            "
-
-
+            Join us on this exciting journey of unlocking your digital potential. Let's make your brand shine and leave a lasting impression on your audience."           
        </p>
       </div>
+
+    <VideoGallery/>
+
+
       <div className='why'>
           <h1 className='aboutTitle'>Why choose us?</h1>
           <p className='aboutText'><TiTick className='tick2'/>
@@ -38,6 +41,9 @@ export default function About() {
           <p className='aboutText'><TiTick className='tick2'/>
           Customer Satisfaction: Your success is our success. We are dedicated to delivering top-notch results that exceed your expectations. Your satisfaction is at the heart of everything we do.           </p>
       </div>
+
+
+
 
     <Footer/>
     </div>
