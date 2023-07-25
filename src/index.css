@@ -743,6 +743,9 @@ p {
  .tick {
   color: blue;
  }
+ .tick2 {
+  color: rgb(55, 125, 223);
+ }
 
 
 /* contact  */
@@ -801,6 +804,44 @@ p {
 
 /* Contact Page */
 
+
+/* About Page */
+
+.about {
+  background-color: #ecfffb;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  text-align: center;
+  align-items: center;
+}
+
+.aboutTitle {
+  font-size: 48px;
+  color: #07273d;
+}
+
+.textAboutUs {
+  width: 80%;
+}
+
+.aboutText {
+  font-size: 28px;
+  font-weight: 200;
+}
+
+.why {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.spanAbout {
+  color: #07273d;
+  font-weight: 600;
+}
+
+/* About Page */
 
 @media screen and (max-width: 1220px) {
   /* Pricing Page */

@@ -2,7 +2,7 @@ import React from 'react'
 import {TiTick} from 'react-icons/ti'
 import {MdOutlineSecurity} from 'react-icons/md'
 import  Footer  from './Footer'
-import { FaqSimple, FaqWithBg } from './FAQs'
+import { FaqWithBg } from './FAQs'
 import { UserContact } from './UserContact'
 
 
