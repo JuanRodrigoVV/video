@@ -18,8 +18,8 @@ export default function Pricing() {
           <h1 className='priceTitle'>Filmora 12 Features</h1> 
           <h2 className='oldPrice'>US$146.95</h2>
           <h1 className='newPrice'>$67.99</h1>
+          <button className='button21'><a href="https://www.google.com">PayPal</a></button>
           <button className='button2'><a href="https://www.google.com">Contact</a></button>
-          <button className='button2'>PayPal</button>
           <div className='pricingTextDiv'>
             <p class="pricingP"><TiTick className='tick'/>No Watermark on Your Exported Videos</p>
             <p class="pricingP"><TiTick className='tick'/>Get access to Filmora 12 for life</p>
@@ -41,8 +41,8 @@ export default function Pricing() {
           <h1 className='priceTitle'>Filmora 12 Features</h1> 
           <h2 className='oldPrice'>US$146.95</h2>
           <h1 className='newPrice'>$67.99</h1>
+          <button className='button21'><a href="https://www.google.com">PayPal</a></button>
           <button className='button2'><a href="https://www.google.com">Contact</a></button>
-          <button className='button2'>PayPal</button>
           <div className='pricingTextDiv'>
             <p class="pricingP"><TiTick className='tick'/>No Watermark on Your Exported Videos</p>
             <p class="pricingP"><TiTick className='tick'/>Get access to Filmora 12 for life</p>
@@ -65,8 +65,8 @@ export default function Pricing() {
           <h1 className='priceTitle'>Filmora 12 Features</h1> 
           <h2 className='oldPrice'>US$146.95</h2>
           <h1 className='newPrice'>$67.99</h1>
+          <button className='button21'><a href="https://www.google.com">PayPal</a></button>
           <button className='button2'><a href="https://www.google.com">Contact</a></button>
-          <button className='button2'>PayPal</button>
           <div className='pricingTextDiv'>
             <p class="pricingP"><TiTick className='tick'/>No Watermark on Your Exported Videos</p>
             <p class="pricingP"><TiTick className='tick'/>Get access to Filmora 12 for life</p>

@@ -18,6 +18,7 @@ code {
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 
 
@@ -439,9 +440,12 @@ p {
   width: 60%;
   text-align: center;
 }
-/* .bottomBannerImg {
-  height: 260px;
-} */
+
+.contactLabel {
+ font-weight: 500;
+ font-size: 28px;
+ 
+}
 
 .bbImgContainer {
   display: flex;
@@ -528,11 +532,11 @@ p {
   position: relative;
   height: 800px;
   width: 100%;
-  border-radius: 20px;
+  /* border-radius: 20px; */
 }
 
 .mainContainer {
-  border-radius: 20px;
+  /* border-radius: 20px; */
   height: 800px;
   
 }
@@ -583,6 +587,7 @@ p {
 
 .messageInput {
   margin-bottom: 28px;
+  
 }
 
 .select {
@@ -700,21 +705,40 @@ p {
 }
 
 .button2 {
-  width: 70%;
-  height: 60px;
+  width: 50%;
+  height: 50px;
   background-color: #07273d;
   border: none;
   border-radius: 20px;
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 5px;
   font-family: 'Roboto', sans-serif;
   font: bolder;
   font-weight: bold;
   transition: transform 0.3s ease;
- 
   
  }
+ .button2:hover {
+  transform: scale(1.1);
+ }
+ .button21 {
+  width: 60%;
+  height: 50px;
+  background-color: #326386;
+  border: none;
+  border-radius: 20px;
+  color: black;
+  font-size: 16px;
+  margin-top: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.button21:hover {
+  transform: scale(1.1);
+}
 
  .tick {
   color: blue;
@@ -734,8 +758,10 @@ p {
   
 }
 
+
 .contactTitle {
   font-size: 48px;
+  color: #07273d
 }
 
 .inputContact {
@@ -751,7 +777,7 @@ p {
 .message {
   width: 40%;
   min-height: 225px;
-  border: none;
+  border: grey solid 0.5px;
   border-radius: 12px;
   margin-bottom: 12px;
 }
@@ -759,6 +785,22 @@ p {
 /* contact  */
 
 /* Pricing Page */
+
+
+/* Contact Page */
+
+.contactPageDiv {
+  height: 100vh;
+  display: flex; /* Add this to make the content fill the height */
+  align-items: center; /* Optional: Center the content vertically */
+  justify-content: center; /* Optional: Center the content horizontally */
+  background-color: #ecfffb;
+
+}
+
+
+/* Contact Page */
+
 
 @media screen and (max-width: 1220px) {
   /* Pricing Page */
@@ -1023,6 +1065,11 @@ p {
    /* pricing page */
    .carDetailsText {
     font-size: 10px;
+  }
+
+  .message {
+    width: 70%;
+    border: grey solid 0.5px
   }
   
   /* pricing page */

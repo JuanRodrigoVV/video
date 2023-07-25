@@ -108,7 +108,7 @@ export function HeaderResponsive({ links }: HeaderResponsiveProps) {
   ));
 
   return (
-    <Header height={HEADER_HEIGHT} mb={12} className={classes.root}>
+    <Header height={HEADER_HEIGHT}  className={classes.root}>
       <Container className={classes.header}>
         <MantineLogo size={28} />
         <Group spacing={5} className={classes.links}>

@@ -11,6 +11,8 @@ import {
   import { IconPlus } from '@tabler/icons-react';
   
   const useStyles = createStyles((theme) => ({
+
+    
     wrapper: {
       
       minHeight: rem(820),
@@ -20,12 +22,14 @@ import {
       position: 'relative',
       color: 'black',
     },
+    
   
     title: {
-      color: 'black',
-      fontSize: 52,
+      color: '#07273d',
+      fontSize: 42,
       fontFamily: `Greycliff CF, ${theme.fontFamily}`,
       marginBottom: `calc(${theme.spacing.xl} * 1.5)`,
+      marginTop: "20px"
     },
   
     item: {
@@ -79,7 +83,20 @@ import {
         width: '100%',
       },
     },
-  }));
+    '@media (max-width: 768px)': {
+    title: {
+      fontSize: 36,
+    },
+    control: {
+      fontSize: theme.fontSizes.md,
+    },
+    content: {
+      fontSize: theme.fontSizes.sm,
+    },
+  },
+  }))
+  
+  ;
   
   const placeholder =
     'It can’t help but hear a pin drop from over half a mile away, so it lives deep in the mountains where there aren’t many people or Pokémon.It was born from sludge on the ocean floor. In a sterile environment, the germs within its body can’t multiply, and it dies.It has no eyeballs, so it can’t see. It checks its surroundings via the ultrasonic waves it emits from its mouth.';

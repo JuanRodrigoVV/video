@@ -20,9 +20,9 @@ export const UserContact = () => {
     <form ref={form} onSubmit={sendEmail} className="contact">
  
         <h1 className='contactTitle'>Get in Touch</h1>
-        <label htmlFor="user_name">Name</label>
+        <label className='contactLabel' htmlFor="user_name">Name</label>
         <input className='inputContact' type="text" name="user_name" />
-        <label  htmlFor="user_email" >Email</label>
+        <label className='contactLabel'   htmlFor="user_email" >Email</label>
         <input className='inputContact' type="email" name="user_email"/>
         <textarea name="message" className='message'/>
 

@@ -7,7 +7,7 @@ function Chat({closeChat}) {
     const [typing, setTyping] = useState(false)
     const [messages, setMessages] = useState([
         {
-          message: "Hello There",
+          message: "Hello! I am Leatnik Bot, and I'm here to guide you through the process of exploring our video collection. If you prefer to chat with a human, please fill your information in the contact section, and one of our representatives will get in touch with you shortly. Feel free to ask me anything about our videos or any assistance you may need. Let's get started! 🎬🤖",
           sender: "ChatGPT"  
         }
     ])
@@ -57,7 +57,7 @@ function Chat({closeChat}) {
 
         const systemMessage = {
             role: "system",
-            content: "Explain everything as is a video editing services. This service edit videos for youtube, livestreams, youtube shorts and all kind of video ads. Thre pricings are: Creator: 3 videos for 100usd, Influencer: 6 videos 180usd, Top Influencer: 9 videos per 250usd. The response should not be longer than 100words"
+            content: "Explain everything as is a video editing services. This service edit videos for youtube, livestreams, youtube shorts and all kind of video ads. Thre pricings are: Creator: 3 videos for 100usd, Influencer: 6 videos 180usd, Top Influencer: 9 videos per 250usd. The response should not be longer than 100words. If you receive any question that is not about the service answer: If you prefer to chat with a human, please fill your information in the contact section, and one of our representatives will get in touch with you shortly."
         }
 
 
@@ -103,7 +103,7 @@ function Chat({closeChat}) {
     return (
   
         <div className='chatContainer'>
-            <button className='chatButton' onClick={closeChat}>Close</button>
+            {/* <button className='chatButton' onClick={closeChat}>Close</button> */}
             <MainContainer className='mainContainer'>
                 <ChatContainer className='chatContainer2'>
                     <MessageList  typingIndicator={typing ? <TypingIndicator content="WonderShare Bot is Typing"/> : null }>
