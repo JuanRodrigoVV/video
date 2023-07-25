@@ -528,7 +528,6 @@ p {
 
 .chat{
   width: 750px;
-  position: fixed;
   bottom: 0;
   right: 20px;
   border-radius: 20px;
@@ -536,16 +535,24 @@ p {
 }
 
 .chatContainer {
-  position: relative;
-  height: 800px;
+
+  height: 100vh;
   width: 100%;
+  z-index: -1;
+  margin-bottom: 40px;
+
   /* border-radius: 20px; */
 }
 
 .mainContainer {
   /* border-radius: 20px; */
-  height: 800px;
+  height: 600px;
+  background-color: red;
   
+}
+
+.pageContainer {
+  margin-top: 30px;
 }
 
 .chatButton {
@@ -901,7 +908,7 @@ p {
   .dropDownIcon {
     width: 20px;
     height: 20px;
-    margin-right: 50px;
+    margin-right: 20px;
   }
   
   
@@ -1072,34 +1079,14 @@ p {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* background-color: red; */
   height: auto;
   width: 100%;
-
   justify-content: center;
   gap: 10px;
   
 }
 
-/* .videoCard {
-  background-color: #e7f5ff;
-  display: flex;
-  flex-direction: column;
-  
-  align-items: center;
-  height: 340px;
-  margin: 10px;
-  max-width: 400px;
-  width: auto;
-  overflow: hidden;
-}
 
-.videoCard iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-  object-fit: fill;
-} */
 
 .videoCard {
   background-color: #111010;
@@ -1107,8 +1094,6 @@ p {
   justify-content: center;
   align-items: center;
   height: 340px;
- 
-  /* margin: 10px; */
   width: 420px;
   overflow: hidden;
   position: relative; 
@@ -1164,7 +1149,9 @@ p {
 /* Media query for even smaller screens */
 @media screen and (max-width: 784px) {
 
-
+  .button {
+    width: 260px;
+  }
 
   .subTitle {
     font-weight: 300;

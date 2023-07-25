@@ -13,19 +13,6 @@ function Chat({closeChat}) {
     ])
 
 
-//   useEffect(() => {
-//     // Restaurar mensajes del localStorage al cargar el componente
-//     const storedMessages = localStorage.getItem('chatMessages');
-//     if (storedMessages) {
-//       setMessages([
-        
-//         JSON.parse(storedMessages)]);
-//     }
-//   }, []);
-
-//   useEffect(() => {
-//     localStorage.setItem('chatMessages', JSON.stringify(messages));
-//   }, [messages]);
 
     const handleSend = async (message) => {
         const newMessage = {
@@ -102,19 +89,20 @@ function Chat({closeChat}) {
 
 
     return (
-  
-        <div className='chatContainer'>
-            {/* <button className='chatButton' onClick={closeChat}>Close</button> */}
-            <MainContainer className='mainContainer'>
-                <ChatContainer className='chatContainer2'>
-                    <MessageList  typingIndicator={typing ? <TypingIndicator content="WonderShare Bot is Typing"/> : null }>
-                        {messages.map((message, i) => {
-                            return <Message  key={i} model={message}></Message>
-                        })}
-                    </MessageList>
-                    <MessageInput className='messageInput' placeholder='Type your message' onSend={handleSend}/>
-                </ChatContainer>
-            </MainContainer>
+        <div className='pageContainer'>
+            <div className='chatContainer'>
+                {/* <button className='chatButton' onClick={closeChat}>Close</button> */}
+                <MainContainer className='mainContainer'>
+                    <ChatContainer className='chatContainer2'>
+                        <MessageList  typingIndicator={typing ? <TypingIndicator content="WonderShare Bot is Typing"/> : null }>
+                            {messages.map((message, i) => {
+                                return <Message  key={i} model={message}></Message>
+                            })}
+                        </MessageList>
+                        <MessageInput className='messageInput' placeholder='Type your message' onSend={handleSend}/>
+                    </ChatContainer>
+                </MainContainer>
+            </div>
         </div>
    
   )
