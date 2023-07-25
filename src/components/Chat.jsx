@@ -57,7 +57,7 @@ function Chat({closeChat}) {
 
         const systemMessage = {
             role: "system",
-            content: "Explain everything as is a video editing services. This service edit videos for youtube, livestreams, youtube shorts and all kind of video ads. Thre pricings are: Creator: 3 videos for 100usd, Influencer: 6 videos 180usd, Top Influencer: 9 videos per 250usd. The response should not be longer than 100words. If you receive any question that is not about the service answer: If you prefer to chat with a human, please fill your information in the contact section, and one of our representatives will get in touch with you shortly."
+            content: "Explain everything as is a video editing services. This service edit videos for youtube, livestreams, youtube shorts and all kind of video ads. Thre pricings are: Creator: 3 videos for 100usd, Influencer: 6 videos 180usd, Top Influencer: 9 videos per 250usd. The response should not be longer than 100words. If you receive any question that is not about the service always, without exception answer: If you prefer to chat with a human, please fill your information in the contact section, and one of our representatives will get in touch with you shortly. I repeat, do not questions unrelated with the video service"
         }
 
 
