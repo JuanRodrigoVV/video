@@ -1,5 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { toast, ToastContainer } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 
 export const UserContact = () => {
   const form = useRef();
@@ -11,6 +13,10 @@ export const UserContact = () => {
       .then((result) => {
           console.log(result.text);
           form.current.reset();
+          toast("Thank you for reaching out. One of our representatives will be in touch with you soon.", {
+            position: toast.POSITION.TOP_CENTER
+          });
+          
       }, (error) => {
           console.log(error.text);
       });
@@ -28,6 +34,7 @@ export const UserContact = () => {
         <textarea name="message" className='message'/>
 
       <button type='submit' className='button'>Get in Touch</button>
+      <ToastContainer/>
 
     </form>
   );
