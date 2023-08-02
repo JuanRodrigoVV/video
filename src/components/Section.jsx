@@ -7,12 +7,12 @@ import { useState } from 'react';
 export default function Section1() {
   
   const links = [
-    "https://filmora.wondershare.com/assets/video/filmora12/homepage/homepage-molie.mp4",
-    "https://filmora.wondershare.com/assets/video/filmora12/homepage/homepage-ipad.mp4",
-    "https://filmora.wondershare.com/assets/video/filmora12/homepage/homepage-desktop.mp4"
+    "https://res.cloudinary.com/dtdjv6zdl/video/upload/v1690918589/Phone_npi0b7.mp4",
+    "https://res.cloudinary.com/dtdjv6zdl/video/upload/v1690919409/Tablet_tubptv.mp4",
+    "https://res.cloudinary.com/dtdjv6zdl/video/upload/v1690918684/Computer_wmi2ji.mp4"
     ]
 
-  let [link, setLink] = useState("https://filmora.wondershare.com/assets/video/filmora12/homepage/homepage-ipad.mp4")
+  let [link, setLink] = useState("https://res.cloudinary.com/dtdjv6zdl/video/upload/v1690919409/Tablet_tubptv.mp4")
 
     
   return (
@@ -43,8 +43,8 @@ export default function Section1() {
                 {/* video div */}
                 {/* text div */}
                     <div className='textDiv'>
-                        <h1 className='titleDiv'>Creativity in Minds, Filmora at Hands</h1>
-                        <p>Add the finishing touch to your masterpiece and share to Filmora workspace for co-creation.</p>
+                        <h1 className='titleDiv'>Unlock Your Video Potential</h1>
+                        <p>Our Expert Editors Optimize Your Content for Every Social Media Platform.</p>
                         <button className='button'>CONTACT US</button>
 
                     </div>

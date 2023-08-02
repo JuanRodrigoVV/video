@@ -6,8 +6,7 @@ import Clients from './Clients'
 import Footer from './Footer'
 import Section1 from './Section'
 import Section2 from './Section2'
-import Chat from './Chat'
-import { BsChatDots } from 'react-icons/bs';
+
 
 
 export default function Home() {
@@ -22,15 +21,15 @@ export default function Home() {
     <div className='home'>
       {/* div del banner */}
       <div className='bannerdiv'>
-        <video autoPlay={true} loop={true} muted className='banner'  src="https://filmora.wondershare.com/assets/video/homepage/filmora-banner-video.mp4"></video>
+        <video autoPlay={true} loop={true} muted className='banner'  src="https://res.cloudinary.com/dtdjv6zdl/video/upload/v1690914770/Banner2_cy6f65.mp4"></video>
       </div>
         {/* div de las cards */}
         <div className='cardDiv'>
           <div className='cardDiv2'>
-            <CardComponent title={'+100'} text={'Clients'} icons='users'/>
+            <CardComponent title={'+50'} text={'Clients'} icons='users'/>
             <CardComponent title={'+5'} text={'Countries'} icons='world'/>
             <CardComponent title={'+200'} text={'Jobs done'}/>
-            <CardComponent title={'+150'} text={'Live Streams'}/>
+            <CardComponent title={'+40'} text={'Live Streams'}/>
           </div>
         </div>
         {/* div de las cards */}

@@ -19,7 +19,7 @@ export default function VideoCard({ videos }) {
 
   return (
     <>
-      {videos.map(({ title, src, description }, index) => (
+      {videos.map(({ title, src, description, link }, index) => (
        <div className='videoCardContainer'>
        <div className='videoCard' key={title}>
           <iframe
@@ -38,7 +38,7 @@ export default function VideoCard({ videos }) {
 
         </div>
           <div className='descriptionCard'>
-          <h1 className='cardVideoTitle'>{title}</h1>
+         <a className='cardVideoTitle' target="_blank"  href={link}>{title}</a>
           <p className='videoCardP'>{description}</p>
           </div>
             </div>
