@@ -40,7 +40,9 @@ export default function Home() {
         <div className='titleandbutton'>
           <h1 className='hometitle'>Join today and get 30% disccount</h1>
           <p className='subtitle'>Captivate Your Audience: Boost User Traffic with Engaging Multimedia Editing</p>
-          <button className='button'>Unlock 30% off</button>
+          <a href="/contact" class="buttonHref">
+                             Unlock 30% off
+                            </a>
         </div>
         {/* title and button */}
         {/* section2  */}
