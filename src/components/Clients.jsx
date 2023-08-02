@@ -20,7 +20,7 @@ export default function Clients() {
                 <img src="https://images.wondershare.com/filmora/filmora12/product/user-shorty-awards.png" alt="" height={"50px"} />
                 <div>
                  <h1 className='clientTitle'>BeInCrypto</h1>
-                 <p className='clientText'>They are the best of the best</p>
+                 <p className='clientText'>A League Above in Professionalism</p>
                </div>
                 </div>
                 <div className='iconsCard'>
@@ -28,7 +28,7 @@ export default function Clients() {
                 <img src="https://images.wondershare.com/filmora/filmora12/product/user-getapp.png" alt="" height={"50px"} />
                 <div >
                  <h1 className='clientTitle'>BeInCrypto</h1>
-                 <p className='clientText'>They are the best of the best</p>
+                 <p className='clientText'>Masters in Crafting Video Excellence</p>
                </div>
                 </div>
             </div>

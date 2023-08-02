@@ -45,7 +45,9 @@ export default function Section1() {
                     <div className='textDiv'>
                         <h1 className='titleDiv'>Unlock Your Video Potential</h1>
                         <p>Our Expert Editors Optimize Your Content for Every Social Media Platform.</p>
-                        <button className='button'>CONTACT US</button>
+                        <a href="/contact" class="buttonHref">
+                             CONTACT US
+                            </a>
 
                     </div>
                 {/* text div */}

@@ -4,15 +4,15 @@ export default function BottomBanner() {
   return (
     <div className='bottomBannerDiv'>
       <div className='bbImgContainer'>
-        <img className='bottomBannerImg' src="https://drive.google.com/uc?id=1wVW8Zcz135-0gPnQMe-F6h9vZm3gKWWU" alt="" />
+        <img className='bottomBannerImg' src="https://res.cloudinary.com/dtdjv6zdl/image/upload/v1690995207/Untitled-1_jnryiw.png" alt="" />
       </div>
        <h1 className='bottomTitle'>
-        See what Wondershare Filmora can
-        help your videos achieve.
+       Connect with one of our representatives and kickstart the enhancement of your video content today.
         </h1>
-        <button className='button'>
-            Contact Us
-        </button>
+        <a href="/contact" class="buttonHref">
+         CONTACT US
+        </a>
+       
     </div>
   )
 }
