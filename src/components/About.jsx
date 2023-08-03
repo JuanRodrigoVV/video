@@ -12,9 +12,9 @@ export default function About() {
         <h1 className='aboutTitle'>Unlock Your Digital Potential with Our Creative Team</h1>
      <div className='textAboutUs'>
        <p className='aboutText'>
-            At <span className='spanAbout'>Media Morphe</span>, we are passionate about crafting captivating digital content that helps businesses like yours reach new heights. With over 8 years of experience in the industry, we specialize in enhancing your online presence and empowering you to achieve your digital goals.
-            <span className='spanAbout'>
-            Put your content in the hands of experts who truly care about your success. 
+            At <span className='spanAbout'>Media Morphe</span>, we are passionate about crafting captivating digital content that helps businesses like yours reach new heights. With over 8 years of experience in the industry, we specialize in enhancing your online presence and empowering you to achieve your digital goals. 
+             <span className='spanAbout'>
+             Put your content in the hands of experts who truly care about your success.  
             
             </span>
             Whether you need a stunning video campaign, engaging copy, a website that converts, or a complete digital strategy, we have you covered.

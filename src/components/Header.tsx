@@ -110,7 +110,12 @@ export function HeaderResponsive({ links }: HeaderResponsiveProps) {
   return (
     <Header height={HEADER_HEIGHT}  className={classes.root}>
       <Container className={classes.header}>
-        <MantineLogo size={28} />
+        {/* <MantineLogo size={28} /> */}
+        <img src="https://res.cloudinary.com/dtdjv6zdl/image/upload/v1690995207/Untitled-1_jnryiw.png" alt="" className='iconResponsive'/>
+        <div className='iconAndText'>
+        <img src="https://res.cloudinary.com/dtdjv6zdl/image/upload/v1691078737/1234_ztoclk.png" alt="" className='headerIcon' />
+        <img src="https://res.cloudinary.com/dtdjv6zdl/image/upload/v1691078745/2345_gfn6q5.png" alt="" className='textIconHeader'/>
+        </div>
         <Group spacing={5} className={classes.links}>
           {items}
         </Group>

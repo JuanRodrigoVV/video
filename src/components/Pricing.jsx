@@ -1,6 +1,8 @@
 import React from 'react'
 import {TiTick} from 'react-icons/ti'
-import {MdOutlineSecurity} from 'react-icons/md'
+import {FaUsersCog} from 'react-icons/fa'
+import {MdHighQuality} from 'react-icons/md'
+import {FaPaintBrush} from 'react-icons/fa'
 import  Footer  from './Footer'
 import { FaqWithBg } from './FAQs'
 import { UserContact } from './UserContact'
@@ -15,91 +17,78 @@ export default function Pricing() {
 
         {/* pricing 1 */}
         <div className='card'>
-          <h1 className='priceTitle'>Filmora 12 Features</h1> 
-          <h2 className='oldPrice'>US$146.95</h2>
-          <h1 className='newPrice'>$67.99</h1>
-          <button className='button21'><a href="https://www.google.com">PayPal</a></button>
-          <button className='button2'><a href="https://www.google.com">Contact</a></button>
+          <h1 className='priceTitle'>Personal</h1> 
+          {/* <h2 className='oldPrice'>US$146.95</h2>
+          <h1 className='newPrice'>$67.99</h1> */}
+          <button className='button21'><a href="/contact">Get Your Budget</a></button>
+          {/* <button className='button2'><a href="https://www.google.com">Contact</a></button> */}
           <div className='pricingTextDiv'>
-            <p class="pricingP"><TiTick className='tick'/>No Watermark on Your Exported Videos</p>
-            <p class="pricingP"><TiTick className='tick'/>Get access to Filmora 12 for life</p>
-            <p class="pricingP"><TiTick className='tick'/>Stock Media (Unsplash, Giphy, Pixabay, Pexel)</p>
-            <p class="pricingP"><TiTick className='tick'/>Filmstock Standard</p>
-            <p class="pricingP"><TiTick className='tick'/>NewBlue FX</p>
-            <p class="pricingP"><TiTick className='tick'/>Boris FX</p>
-            <p class="pricingP"><TiTick className='tick'/>AI Portrait</p>
-            <p class="pricingP"><TiTick className='tick'/>10GB of Filmora cloud storage</p>
-            <p class="pricingP"><TiTick className='tick'/>Speech-to-Text 30 mins</p>
-            <p class="pricingP"><TiTick className='tick'/>Text-to-Speech 5000 characters</p>
+            <p class="pricingP"><TiTick className='tick'/>Video-call with one of our representatives, defining Project Key Points</p>
+            <p class="pricingP"><TiTick className='tick'/>One video corrections per project</p>
+            <p class="pricingP"><TiTick className='tick'/>One format per project (Widescreen or Vertical)</p>
+          
+       
           </div> 
         </div>
         {/* pricing 1 */}
 
+        {/* pricing 3 */}
+        <div className='card'>
+          <h1 className='priceTitle'>Business</h1> 
+          {/* <h2 className='oldPrice'>US$146.95</h2>
+          <h1 className='newPrice'>$67.99</h1> */}
+          <button className='button21'><a href="/contact">Get Your Budget</a></button>
+          {/* <button className='button2'><a href="https://www.google.com">Contact</a></button> */}
+          <div className='pricingTextDiv'>
+            <p class="pricingP"><TiTick className='tick'/>Weekly Video-call with one of our representatives, defining Project Key Points</p>
+            <p class="pricingP"><TiTick className='tick'/>Three video Corrections per project</p>
+            <p class="pricingP"><TiTick className='tick'/>Expert Suggestions to achieve the perfect Format According to Your Media Strategy</p>
+            <p class="pricingP"><TiTick className='tick'/>Widescreen and Vertical Video per project</p>
+            <p class="pricingP"><TiTick className='tick'/>Script for your project</p>
+            <p class="pricingP"><TiTick className='tick'/>Two Script Corrections per project</p>
+           
+          </div> 
+        </div>
+        {/* pricing 3 */}
 
         {/* pricing 2 */}
         <div className='card'>
-          <h1 className='priceTitle'>Filmora 12 Features</h1> 
-          <h2 className='oldPrice'>US$146.95</h2>
-          <h1 className='newPrice'>$67.99</h1>
-          <button className='button21'><a href="https://www.google.com">PayPal</a></button>
-          <button className='button2'><a href="https://www.google.com">Contact</a></button>
+          <h1 className='priceTitle'>Creator</h1> 
+          {/* <h2 className='oldPrice'>US$146.95</h2>
+          <h1 className='newPrice'>$67.99</h1> */}
+          <button className='button21'><a href="/contact">Get Your Budget</a></button>
+          {/* <button className='button2'><a href="https://www.google.com">Contact</a></button> */}
           <div className='pricingTextDiv'>
-            <p class="pricingP"><TiTick className='tick'/>No Watermark on Your Exported Videos</p>
-            <p class="pricingP"><TiTick className='tick'/>Get access to Filmora 12 for life</p>
-            <p class="pricingP"><TiTick className='tick'/>Stock Media (Unsplash, Giphy, Pixabay, Pexel)</p>
-            <p class="pricingP"><TiTick className='tick'/>Filmstock Standard</p>
-            <p class="pricingP"><TiTick className='tick'/>NewBlue FX</p>
-            <p class="pricingP"><TiTick className='tick'/>Boris FX</p>
-            <p class="pricingP"><TiTick className='tick'/>AI Portrait</p>
-            <p class="pricingP"><TiTick className='tick'/>10GB of Filmora cloud storage</p>
-            <p class="pricingP"><TiTick className='tick'/>Speech-to-Text 30 mins</p>
-            <p class="pricingP"><TiTick className='tick'/>Text-to-Speech 5000 characters</p>
+            <p class="pricingP"><TiTick className='tick'/>Weekly-calls with one of our representatives, defining Project Key Points</p>
+            <p class="pricingP"><TiTick className='tick'/>Two video corrections per project</p>
+            <p class="pricingP"><TiTick className='tick'/>Widescreen and Vertical Video per project</p>  
+            <p class="pricingP"><TiTick className='tick'/>Expert Suggestions to achieve the perfect Format According to Your Media Strategy</p>
+
           </div> 
         </div>
           {/* pricing 2 */}
         
         
         
-        {/* pricing 3 */}
-        <div className='card'>
-          <h1 className='priceTitle'>Filmora 12 Features</h1> 
-          <h2 className='oldPrice'>US$146.95</h2>
-          <h1 className='newPrice'>$67.99</h1>
-          <button className='button21'><a href="https://www.google.com">PayPal</a></button>
-          <button className='button2'><a href="https://www.google.com">Contact</a></button>
-          <div className='pricingTextDiv'>
-            <p class="pricingP"><TiTick className='tick'/>No Watermark on Your Exported Videos</p>
-            <p class="pricingP"><TiTick className='tick'/>Get access to Filmora 12 for life</p>
-            <p class="pricingP"><TiTick className='tick'/>Stock Media (Unsplash, Giphy, Pixabay, Pexel)</p>
-            <p class="pricingP"><TiTick className='tick'/>Filmstock Standard</p>
-            <p class="pricingP"><TiTick className='tick'/>NewBlue FX</p>
-            <p class="pricingP"><TiTick className='tick'/>Boris FX</p>
-            <p class="pricingP"><TiTick className='tick'/>AI Portrait</p>
-            <p class="pricingP"><TiTick className='tick'/>10GB of Filmora cloud storage</p>
-            <p class="pricingP"><TiTick className='tick'/>Speech-to-Text 30 mins</p>
-            <p class="pricingP"><TiTick className='tick'/>Text-to-Speech 5000 characters</p>
-          </div> 
-        </div>
-        {/* pricing 3 */}
       </div>
 
       {/* card pricing details */}
 
       <div className='cardDetails'>
         <div className='insideCardDetails'>
-          <MdOutlineSecurity className='cardDetailsIcons'/>
-          <h2 className='detailsTitle'>Secure</h2>
-          <p className='carDetailsText'>We value your privacy and protect your financial/personal info with advanced encryption and advanced fraud protection.</p>
+          <MdHighQuality className='cardDetailsIcons'/>
+          <h2 className='detailsTitle'>High Quality</h2>
+          <p className='carDetailsText'>Our commitment to delivering high-quality results is unwavering, setting us apart as the premier choice for all your video editing needs.</p>
         </div>
         <div className='insideCardDetails'>
-          <MdOutlineSecurity className='cardDetailsIcons'/>
-          <h2 className='detailsTitle'>Secure</h2>
-          <p className='carDetailsText'>We value your privacy and protect your financial/personal info with advanced encryption and advanced fraud protection.</p>
+          <FaUsersCog className='cardDetailsIcons'/>
+          <h2 className='detailsTitle'>Community</h2>
+          <p className='carDetailsText'>Join a league of satisfied clients who have witnessed their projects transform into captivating masterpieces.</p>
         </div>
         <div className='insideCardDetails'>
-          <MdOutlineSecurity className='cardDetailsIcons'/>
+          <FaPaintBrush className='cardDetailsIcons'/>
           <h2 className='detailsTitle'>Secure</h2>
-          <p className='carDetailsText'>We value your privacy and protect your financial/personal info with advanced encryption and advanced fraud protection.</p>
+          <p className='carDetailsText'>Don't let creative doubts hinder your video project. Our expert team collaborates with you to refine your video style, making your content truly exceptional.</p>
     
 
         </div>

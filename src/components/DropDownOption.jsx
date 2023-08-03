@@ -3,7 +3,7 @@ import {BiDownArrow} from 'react-icons/bi'
 import { useState } from 'react'
 
 
-export default function DropDownOption({options}) {
+export default function DropDownOption({options, title}) {
   const [arrow, setArrow] = useState(false);
 
 
@@ -11,7 +11,7 @@ export default function DropDownOption({options}) {
     <div className='dropDownOption'>
     <ul className='ulFooter'>
         <div className='titleArrow'>
-             <h1 className='titleDropDown'>Products</h1>
+             <h1 className='titleDropDown'>{title}</h1>
              <BiDownArrow onClick={() => setArrow(!arrow)} className='dropDownIcon'/>
         </div>
         {arrow ? <segment className='segment'>
