@@ -1,19 +1,23 @@
 import React from 'react'
 
-export default function ClientCard({text}) {
+export default function ClientCard({text, name, position, image}) {
   return (
    
         <div className='card2'>
-          <p className='cardText2'>{text}</p>
+          <div className="divTextClient">
+            <p className='cardText2'>{text}</p>
+          </div>
         
         <div className='cardImageText'>
           <div className='imageCard'>
-            <img className='cardImage' src="https://images.wondershare.com/filmora/Contributor/jacky-nguyen-profile.jpg" alt="" />  
+            <img className='cardImage' src={image} alt="" />  
           </div>
-        <div>
-          <h1 className='clientCardName'>John Doe</h1>
-          <p className='clientCardTitle'>Filmaker</p>
-        </div>
+          <div>
+
+          <h1 className='clientCardName'>{name}</h1>
+          <p className='clientCardTitle'>{position}</p>
+          </div>
+     
         </div>
    
     </div>

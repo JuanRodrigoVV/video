@@ -124,28 +124,28 @@ import {
               }
             >
               <Accordion.Item className={classes.item} value="reset-password">
-                <Accordion.Control>How can I reset my password?</Accordion.Control>
-                <Accordion.Panel>{placeholder}</Accordion.Panel>
+                <Accordion.Control>What Services Do We Offer?</Accordion.Control>
+                <Accordion.Panel>At Media Morphe, we specialize in professional video editing. Our expertise extends to editing tutorials, refining digital content, enhancing media ads, optimizing digital course lessons, and catering to all your digital business needs."</Accordion.Panel>
               </Accordion.Item>
   
               <Accordion.Item className={classes.item} value="another-account">
-                <Accordion.Control>Can I create more that one account?</Accordion.Control>
-                <Accordion.Panel>{placeholder}</Accordion.Panel>
+                <Accordion.Control>What's the process like? </Accordion.Control>
+                <Accordion.Panel>Simply schedule a call with one of our representatives to discuss the essential aspects of your project.</Accordion.Panel>
               </Accordion.Item>
   
               <Accordion.Item className={classes.item} value="newsletter">
-                <Accordion.Control>How can I subscribe to monthly newsletter?</Accordion.Control>
-                <Accordion.Panel>{placeholder}</Accordion.Panel>
+                <Accordion.Control>What Types of Videos Do We Edit?</Accordion.Control>
+                <Accordion.Panel>We specialize in a wide range of video formats, including social media ads, tutorials, video blogs, YouTube content, Instagram ads, and Facebook ads. If you can name it, we can edit it.</Accordion.Panel>
               </Accordion.Item>
   
               <Accordion.Item className={classes.item} value="credit-card">
-                <Accordion.Control>Do you store credit card information securely?</Accordion.Control>
-                <Accordion.Panel>{placeholder}</Accordion.Panel>
+                <Accordion.Control>What if I need a page for my product? </Accordion.Control>
+                <Accordion.Panel>We also offer web design services tailored to showcase your products. Fill out your details in the Contact section, and one of our representatives will reach out to you shortly."</Accordion.Panel>
               </Accordion.Item>
   
               <Accordion.Item className={classes.item} value="payment">
-                <Accordion.Control>What payment systems to you work with?</Accordion.Control>
-                <Accordion.Panel>{placeholder}</Accordion.Panel>
+                <Accordion.Control>What is the price? </Accordion.Control>
+                <Accordion.Panel>Prices vary based on several key factors: the type of content you provide to us, the desired length and format of the video, as well as any specific design requirements you may have. Schedule a call to discuss your needs and receive a personalized quote.</Accordion.Panel>
               </Accordion.Item>
             </Accordion>
           </Container>

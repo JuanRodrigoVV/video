@@ -1,22 +1,26 @@
 import React from 'react'
 import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css'
 import { MainContainer, ChatContainer, MessageList, Message, MessageInput, TypingIndicator } from '@chatscope/chat-ui-kit-react'
-import { useState, useEffect } from 'react'
+import { useState} from 'react'
+import {BsSendFill} from 'react-icons/bs'
+
 
 function Chat({closeChat}) {
+
+    const [inputValue, setInputValue] = useState('');
     const [typing, setTyping] = useState(false)
     const [messages, setMessages] = useState([
         {
-          message: "Hello! I am Leatnik Bot, and I'm here to guide you through the process of exploring our video collection. If you prefer to chat with a human, please fill your information in the contact section, and one of our representatives will get in touch with you shortly. Feel free to ask me anything about our videos or any assistance you may need. Let's get started! 🎬🤖",
+          message: "Hello! I am Media Morphhe Bot, and I'm here to guide you through the process of exploring our video collection. If you prefer to chat with a human, please fill your information in the contact section, and one of our representatives will get in touch with you shortly. Feel free to ask me anything about our videos or any assistance you may need. Let's get started! 🎬🤖",
           sender: "ChatGPT"  
         }
     ])
 
 
 
-    const handleSend = async (message) => {
+    const handleSend = async () => {
         const newMessage = {
-            message: message,
+            message: inputValue,
             sender: "user",
             direction: "outgoing"
         }
@@ -27,6 +31,8 @@ function Chat({closeChat}) {
         //processing  message
         await processMesageToChatGPT(newMessages);
         //processing  message
+        setInputValue('')
+
         
     } 
 
@@ -44,7 +50,7 @@ function Chat({closeChat}) {
 
         const systemMessage = {
             role: "system",
-            content: "Explain everything as is a video editing services. This service edit videos for youtube, livestreams, youtube shorts and all kind of video ads. Thre pricings are: Creator: 3 videos for 100usd, Influencer: 6 videos 180usd, Top Influencer: 9 videos per 250usd. The response should not be longer than 100words.  If you receive any question that is not about the service or how to get in contact with a human always, without exception answer: If you prefer to chat with a human, please fill your information in the contact section, and one of our representatives will get in touch with you shortly. I repeat, do not questions unrelated with the video service"
+            content: "You must answer questions related to this information, it is for a video editing service website. We provide a service of video editing. We edit all kind of videos, tutorial, instagram ads, facebook ads, youtube videoblogs, educational content, web3 content. We edit in all formats widescreen and vertical. We are experts with more than 8 years of experience in the industry, we have work for some major media platforms.  The team is compose by an expert filmaker, a copywriter, web developer, social media and communication expert. You can check some of our jobs in the about us section. In case you need it for your product, we also provide service of web development and copywriting. The prices: The prices changes acordding to many aspects of your product needs. The material script and assets you provide to us and the complexity of the video you need. Please get fill your info in the contact section and we will get in touch with you. Do not answer questions unrelated to the service. "
         }
 
 
@@ -85,7 +91,10 @@ function Chat({closeChat}) {
         
     };
 
-
+    const handleButtonClick = () => {
+        // Display the input value in an alert
+        alert(inputValue);
+      };
 
 
     return (
@@ -94,14 +103,19 @@ function Chat({closeChat}) {
                 {/* <button className='chatButton' onClick={closeChat}>Close</button> */}
                 <MainContainer className='mainContainer'>
                     <ChatContainer className='chatContainer2'>
-                        <MessageList  typingIndicator={typing ? <TypingIndicator content="WonderShare Bot is Typing"/> : null }>
+                        <MessageList  typingIndicator={typing ? <TypingIndicator content="Media Morphe Bot is Typing"/> : null }>
                             {messages.map((message, i) => {
                                 return <Message  key={i} model={message}></Message>
                             })}
                         </MessageList>
-                        <MessageInput className='messageInput' placeholder='Type your message' onSend={handleSend}/>
+                        {/* <MessageInput className='messageInput' placeholder='Type your message' onSend={handleSend}/> */}
                     </ChatContainer>
                 </MainContainer>
+                <div className='inputChatDiv'>
+                        <input className='input' type="text" value={inputValue} onChange={(e) => setInputValue(e.target.value)}/>
+                        <BsSendFill className='chatSend' onClick={handleSend}/>
+                </div>
+
             </div>
         </div>
    

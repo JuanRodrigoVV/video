@@ -39,7 +39,9 @@ export default function Home() {
         {/* title and button */}
         <div className='titleandbutton'>
           <h1 className='hometitle'>Join today and get 30% disccount</h1>
-          <p className='subtitle'>Captivate Your Audience: Boost User Traffic with Engaging Multimedia Editing</p>
+          <div className='subtitleContainer'>
+          <p className='subtitle'>We bring to you a seasoned video editing service, <span className='spanAbout'>backed by more than 8 years of hands-on experience.</span> When you choose us, you're placing your valuable videos in the capable hands of dedicated professionals who understand the art and science of crafting compelling visual narratives. <span className='spanAbout'>Captivate Your Audience: Boost User Traffic with Engaging Multimedia Editing</span></p>
+          </div>
           <a href="/contact" class="buttonHref">
                              Unlock 30% off
                             </a>
